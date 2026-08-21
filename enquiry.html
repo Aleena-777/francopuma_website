@@ -1,0 +1,62 @@
+<html lang="en">
+ <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="nav-brand" href="index.html">Francopuma Ent.</a>
+            <div class="nav-links">
+                <!--External navigation bar-->
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="products.html">Products</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!--The beginning of the enquiry container-->
+    <div class="form-container">
+        <h2>Enquiry Form</h2>
+        
+        <!-- The action attribute specifies where to send the form data upon submission -->
+    <!-- The method="POST" attribute sends the data securely in the HTTP request body -->
+        <form action="https://formsubmit.co" method="POST">
+
+             <!--  USER IDENTIFICATION -->
+            <div class="form-group">
+                <!-- The 'for' attribute must match the 'id' of the input for accessibility --> 
+                <label for="fullName">Full Name</label>
+                <!-- 'required' forces the user to fill out this field before submitting -->
+                <input type="text" id="fullName" name="fullName" placeholder="Vivi Nefertari" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <!-- type="email" automatically triggers browser-level email validation -->
+                <input type="email" id="email" name="email" placeholder="vivi.nefertari@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <!-- 'textarea' allows for multi-line text input, perfect for detailed comments -->
+            <!-- rows and cols define the initial physical size of the text box -->
+                <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+            </div>
+
+            <!-- Clicking this button triggers the form submission process -->
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+<!--  Footer Section -->
+    <footer class="site-footer">
+        <p><strong>FRANCOPUMA</strong></p>
+        <p>Reliable building materials and hardware for builders, homeowners, and contractors.</p>
+    </footer>
+</body>
+</html>
