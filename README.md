@@ -32,14 +32,19 @@ Typography was changed from  Open Sans and Sans-serif collection to Roboto, Helv
 The internal navigation on the product page was moved from the side bar to the top bar.
 
 Website on different screens:
+
 Desktop:
 <img width="1356" height="596" alt="Screenshot 2026-09-25 142842" src="https://github.com/user-attachments/assets/ab2f275f-871d-4f94-9eb6-58caef0fc048" />
+
 iPad mini:
 <img width="382" height="510" alt="Screenshot 2026-09-25 142954" src="https://github.com/user-attachments/assets/ce77a611-6e2d-4801-b8bc-278c220ea503" />
+
 iPhone 16 Pro Max:
 <img width="222" height="475" alt="Screenshot 2026-09-25 143101" src="https://github.com/user-attachments/assets/c85d60c0-4087-44f8-ab6e-470aad7c15ed" />
+
 Nest Hub Max(Smart displays):
 <img width="765" height="478" alt="Screenshot 2026-09-25 143205" src="https://github.com/user-attachments/assets/6826aec4-33b3-4608-b529-f5428f4a5fc9" />
+
 Galaxy Fold Z:
 <img width="206" height="481" alt="Screenshot 2026-09-25 143455" src="https://github.com/user-attachments/assets/2fe0a8e9-0496-4088-ad16-a028b8508c6c" />
 
