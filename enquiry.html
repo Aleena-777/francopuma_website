@@ -1,62 +1,44 @@
+<!DOCTYPE html>
 <html lang="en">
- <header class="site-header">
-        <nav class="navbar" aria-label="Main navigation">
-            <a class="nav-brand" href="index.html">Francopuma Ent.</a>
-            <div class="nav-links">
-                <!--External navigation bar-->
-                <a href="index.html" aria-current="page">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="products.html">Products</a>
-                <a href="enquiry.html">Enquiry</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-        </nav>
-    </header>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <!--The beginning of the enquiry container-->
-    <div class="form-container">
-        <h2>Enquiry Form</h2>
-        
-        <!-- The action attribute specifies where to send the form data upon submission -->
-    <!-- The method="POST" attribute sends the data securely in the HTTP request body -->
-        <form action="https://formsubmit.co" method="POST">
-
-             <!--  USER IDENTIFICATION -->
-            <div class="form-group">
-                <!-- The 'for' attribute must match the 'id' of the input for accessibility --> 
-                <label for="fullName">Full Name</label>
-                <!-- 'required' forces the user to fill out this field before submitting -->
-                <input type="text" id="fullName" name="fullName" placeholder="Vivi Nefertari" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email</label>
-                <!-- type="email" automatically triggers browser-level email validation -->
-                <input type="email" id="email" name="email" placeholder="vivi.nefertari@example.com" required>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message</label>
-                <!-- 'textarea' allows for multi-line text input, perfect for detailed comments -->
-            <!-- rows and cols define the initial physical size of the text box -->
-                <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
-            </div>
-
-            <!-- Clicking this button triggers the form submission process -->
-            <button type="submit" class="submit-btn">Submit</button>
-        </form>
-    </div>
-
-<!--  Footer Section -->
-    <footer class="site-footer">
-        <p><strong>FRANCOPUMA ENT.</strong></p>
-        <p>Reliable building materials and hardware for builders, homeowners, and contractors.</p>
-    </footer>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Enquiry & Price Estimate | Francopuma Ent.</title>
+        <meta name="description" content="Enquire about building materials and hardware prices and availability at Francopuma Enterprise and get an instant cost estimate.">
+        <meta name="keywords" content="building materials Ghana, hardware shop Volta Region, cement prices Ghana, iron rods, roofing sheets, Dzodze, Ketu North">
+        <meta name="author" content="Francopuma Enterprise">
+        <link rel="canonical" href="https://www.francopuma.com/enquiry">
+        <meta property="og:type" content="website"><meta property="og:title" content="Product Enquiry & Price Estimate | Francopuma Ent."><meta property="og:description" content="Enquire about building materials and hardware prices and availability at Francopuma Enterprise and get an instant cost estimate."><meta property="og: image" content="https://www.example.com/images/francopuma-logo.jpeg">
+        <link rel="icon" href="_images/Francopuma Ent. Logo.jpeg">
+        <link rel="stylesheet" href="style.css">
+        <script src="productData.js" defer></script><script src="script.js" defer></script>
+        </head>
+        <body>
+            <header class="site-header"><nav class="navbar" aria-label="Main navigation"><img src="_images/Francopuma Ent. Logo.jpeg" alt="Francopuma Enterprise logo" class="nav-logo" width="60" height="42"><a class="nav-brand" href="index.html">Francopuma Ent.</a><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="enquiry.html" aria-current="page">Enquiry</a><a href="contact.html">Contact Us</a></div></nav></header>
+            <main>
+             <div class="form-container">
+                <h1>Enquiry</h1>
+                <p>Choose a product and quantity to get an instant cost estimate. We will also receive your enquiry and follow up</p>
+                <form id="enquiry-form" action="https://formsubmit.co/nefifrancis@gmail.com" method ="POST" data-ajax="https://formsubmit.co/ajax/nefifrancis@gmail.com" novalidate>
+                    <input type="text" name="honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+                    <input type="hidden" name="_subject" value="New product enquiry- Francopuma website">
+                    <div class="form-group"><label for="fullName">Full Name</label><input type="text" id="fullName" name="fullName" placeholder="Vivi Nefertari" required autocomplete="name"><span class="error-msg" id="fullName-error"></span></div>
+                    <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="vivinefertari@gmail.com" required autocomplete="email"><span class="error-msg" id="email-error"></span></div>
+                    <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="+233 24 242 5416" required autocomplete="tel"><span class="error-msg" id="phone-error"></span></div>
+                    <div class="form-group"><label for="enquiryType">Enquiry Type</label><select id="enquiryType" name="enquiryType" required><option value="">Select...</option><option>Price and availability</option><option>Bulk order</option><option>Delivery</option><option>Other</option></select><span class="error-msg" id="enquiryType-error"></span></div>
+                    <div class="form-group"><label for="product">Product</label><select id="product" name="product" required><option value="">Select a product...</option></select><span class="error-msg" id="product-error"></span></div>
+                    <div class="form-group"><label for="priceOption">Size / Option</label><select id="priceOption" name="priceOption" required><option value="">Select a product first</option></select><span class="error-msg" id="priceOption-error"></span></div>
+                    <div class="form-group"><label for="quantity">Quantity</label><input type="number" id="quantity" name="quantity" min="1" max="10000" value="1" required><span class="error-msg" id="quantity-error"></span></div>
+                    <div class="form-group"><label for="neededBy">Date Needed</label><input type="date" id="neededBy" name="neededBy" required><span class="error-msg" id="neededBy-error"></span></div>
+                    <div class="form-group"><label for="message">Additional Details (optional)</label><textarea id="message" name="message" rows="4" maxlength="500" placeholder="Any extra details..."></textarea><span class="counter" id="msg-count">0 / 500</span></div>
+                    <button type="submit" class="submit-btn">Get Estimate &amp; Send Enquiry</button>
+                </form>
+            <div id="enquiry-result" class="form-result" role="status" aria-live="polite" hidden></div>
+           </div>
+        </main>
+<footer class="site-footer">
+    <p><strong>FRANCOPUMA</strong></p>
+    <p>Reliable building materials and hardware for builders, homeowners, and contractors.</p>
+   </footer>
 </body>
 </html>
