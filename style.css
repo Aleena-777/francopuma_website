@@ -732,11 +732,11 @@ a {
         }
     }
     
-    .wrap {max-width: 75rem; margin: 0 auto; padding: var(--space-lg) 2rem;
+    .wrap {max-width: 75rem; margin: 0 auto; padding: var(--space-lg) 2rem;}
     .page-head {text-align: center; margin-bottom: var(--space-lg);}
-    .sr-only {position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect (0 0 0 0); white-space: nowrap;}
+    .sr-only {position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;}
     .no-scroll {overflow: hidden; }
-    .hp {position: absolute; left: -9999px;}
+    .hp { position: absolute; left: -9999px; }
 
     .reveal {opacity: 0; transform: translateY(1.25rem); transition: opacity 0.5s ease, transform 0.5s ease;}
     .reveal.visible {opacity: 1; transform: none;}
@@ -807,5 +807,4 @@ a {
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
-}
 }
