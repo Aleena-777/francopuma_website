@@ -152,8 +152,13 @@ const counter = () => { const m = $('#message'), c = $('#msg-count'); if (m && c
                 const subject = '[' + v('messageType') + '] Message from ' + v('name');
                 const body = 'Name: ' + v('name') + '\nEmail: ' + v('email') + '\nPhone: ' + v('phone') + '\nType: ' + v('messageType') + '\n\n' + v('message');
                 $('#email-text').textContent = 'To: ' + EMAIL + '\nSubject: ' + subject + '\n\n' + body;
-                $('#send-email').href = 'mailto:' +  EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+                $('#send-email').href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+                $('#send-gmail').href ='https://mail.google.com/mail/?view=cm&fs=1&to=' + EMAIL + '&su=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+                $('#copy-email').onclick = () => navigator.clipboard.writeText($('#email-text').textContent)
+                .then(() => { $('#copy-status').textContent = 'Email copied. Paste it into any email app.'; })
+                .catch(() => { $('#copy-status').textContent = 'Could not copy. Select the text above and copy it manually.'; });
                 const box = $('#email-preview'); box.hidden = false; box.scrollIntoView({behavior: 'smooth'});
+
             });
         }
 
