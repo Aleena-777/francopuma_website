@@ -26,10 +26,18 @@ Part 1 builds the foundation of the website for the chosen website by using HTML
 Sitemap:
 <img width="1326" height="305" alt="Screenshot 2026-08-21 182815" src="https://github.com/user-attachments/assets/48dd759f-d3e4-48a3-af65-a2a5eb3eb205" />
 
-Changelog:
+Part 1 -2 Changelog:
 Colour scheme changed from Forsythia, deep saffron and oceanic noir to navy, navy-dark, terracotta, terracotta-dark, charcoal, cream, steel, white and off- white. This change was done to better suit the logo of the business and make it more professional.
 Typography was changed from  Open Sans and Sans-serif collection to Roboto, Helvetica, Arial, sans-serif to make it more professional.
 The internal navigation on the product page was moved from the side bar to the top bar.
+
+Part 3 Changelog:
+Renamed _image file to image file so that images are showcase when the website is deployed.
+Contact us screen now has a form where users may submit general messages as well as an interactive map.
+Enquiry screen was changed slightly to be used to ask questions that pertain to the products.
+Products html now does not have all the products typed in instead all products where stored in productData.js a new file created.
+On the products page there is now a search box, category filter and sorting by name or price instead of the initial category list only.
+index.html and about.html have been rewritten to enhance the website.
 
 Website on different screens:
 
@@ -51,3 +59,4 @@ Galaxy Fold Z:
 References:
 The IIE. 2012. Leadership in education [EDML8419 Learn]. The Independent Institute of Education: Unpublished.
 Anthropic (2026) Claude. Available from: https://claude.ai [Accessed 13 September 2026].
+N.Mendu (2026) 3. wede-git-github-pages-output.mp4 [Video file] University Intranet: [Internal network]
